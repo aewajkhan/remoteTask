@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cart.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="cart-container">
+        <div class="headline">
+          <span class="dash-headline"></span>
+          <h1>YAY! It’s BOGO</h1>
+          <span class="dash-headline-right"></span>
+        </div>
+        <div id="mid-container">
+          <div class="container">
+            <!-- Unit 1 -->
+            <div
+              class="unit-1"
+              style="padding: 15px"
+              id="unit1"
+              onclick="toggleExpand('unit1')"
+            >
+              <div
+                class="unit-1-container"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 11px;
+                "
+              >
+                <div class="unit-left">
+                  <input
+                    type="radio"
+                    name="unit"
+                    onclick="toggleExpand('unit1')"
+                  />
+                  <span class="all-unit">
+                    1 Unit
+                    <span class="discount">10% Off</span>
+                  </span>
+                  <p class="standard-price">Standard price</p>
+                </div>
+                <div class="unit-right">
+                  <h4>$10.00 USD</h4>
+                  <del class="del">$24.00 USD</del>
+                </div>
+              </div>
+              <div
+                id="bundle-item-bottom-unit1"
+                style="margin-left: 50px"
+                class="bundle-item-bottom"
+              >
+                <div style="display: flex" class="bundle-size-color">
+                  <div class="size-color-left">#1</div>
+                  <div style="margin-right: 10px">
+                    <p class="size-color">Size</p>
+                    <select class="size-color-center">
+                      <option value="" disabled>Size</option>
+                      <option value="">S</option>
+                      <option value="">M</option>
+                      <option value="">L</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p class="size-color">Color</p>
+                    <select class="size-color-right">
+                      Colour
+                      <option value="" disabled>Colour</option>
+                      <option value="">Red</option>
+                      <option value="">Green</option>
+                    </select>
+                  </div>
+                </div>
+                <div
+                  style="display: flex; margin-top: 10px"
+                  class="bundle-size-color"
+                >
+                  <div class="size-color-left" style="margin-top: 10px">#2</div>
+                  <select class="size-color-center" style="margin-right: 10px">
+                    <option value="" disabled>Size</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                  </select>
+                  <select class="size-color-right">
+                    <option value="" disabled>Colour</option>
+                    <option value="">Red</option>
+                    <option value="">Green</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unit 2 -->
+
+            <div class="most-popular">
+              <p>MOST POPULAR</p>
+            </div>
+            <div
+              class="unit-1"
+              id="unit2"
+              onclick="toggleExpand('unit2')"
+              style="padding: 15px"
+            >
+              <div
+                class="unit-1-container"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 11px;
+                "
+              >
+                <div class="unit-left">
+                  <input
+                    type="radio"
+                    name="unit"
+                    onclick="toggleExpand('unit2')"
+                  />
+                  <span class="all-unit">
+                    2 Unit
+                    <span class="discount">20% Off</span>
+                  </span>
+                </div>
+                <div class="unit-right">
+                  <h4>$18.00 USD</h4>
+                  <del class="del">$24.00 USD</del>
+                </div>
+              </div>
+              <div
+                id="bundle-item-bottom-unit2"
+                style="margin-left: 50px"
+                class="bundle-item-bottom"
+              >
+                <div style="display: flex" class="bundle-size-color">
+                  <div class="size-color-left">#1</div>
+                  <div style="margin-right: 10px">
+                    <p class="size-color">Size</p>
+                    <select class="size-color-center">
+                      <option value="" disabled>Size</option>
+                      <option value="">S</option>
+                      <option value="">M</option>
+                      <option value="">L</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p class="size-color">Color</p>
+                    <select class="size-color-right">
+                      Colour
+                      <option value="" disabled>Colour</option>
+                      <option value="">Red</option>
+                      <option value="">Green</option>
+                    </select>
+                  </div>
+                </div>
+                <div
+                  style="display: flex; margin-top: 10px"
+                  class="bundle-size-color"
+                >
+                  <div
+                    class="size-color-left"
+                    style="margin-right: 10px; margin-top: 10px"
+                  >
+                    #2
+                  </div>
+                  <select class="size-color-center" style="margin-right: 10px">
+                    <option value="" disabled>Size</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                  </select>
+                  <select class="size-color-right">
+                    <option value="" disabled>Colour</option>
+                    <option value="">Red</option>
+                    <option value="">Green</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unit 3 -->
+            <div
+              class="unit-1"
+              style="padding: 15px"
+              id="unit3"
+              onclick="toggleExpand('unit3')"
+            >
+              <div
+                class="unit-1-container"
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 11px;
+                "
+              >
+                <div class="unit-left">
+                  <label class="custom-radio">
+                    <input
+                      type="radio"
+                      name="unit"
+                      class="radio-input"
+                      onclick="toggleExpand('unit3')"
+                    />
+                    <span class="radio-custom"></span>
+                  </label>
+                  <span class="all-unit">
+                    3 Unit
+                    <span class="discount">30% Off</span>
+                  </span>
+                </div>
+                <div class="unit-right">
+                  <h4>$24.00 USD</h4>
+                  <del class="del">$24.00 USD</del>
+                </div>
+              </div>
+              <div
+                id="bundle-item-bottom-unit3"
+                style="margin-left: 50px"
+                class="bundle-item-bottom"
+              >
+                <div style="display: flex" class="bundle-size-color">
+                  <div class="size-color-left">#1</div>
+                  <div style="margin-right: 10px">
+                    <p class="size-color">Size</p>
+                    <select class="size-color-center">
+                      <option value="" disabled>Size</option>
+                      <option value="">S</option>
+                      <option value="">M</option>
+                      <option value="">L</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p class="size-color">Color</p>
+                    <select class="size-color-right">
+                      Colour
+                      <option value="" disabled>Colour</option>
+                      <option value="">Red</option>
+                      <option value="">Green</option>
+                    </select>
+                  </div>
+                </div>
+                <div
+                  style="display: flex; margin-top: 10px"
+                  class="bundle-size-color"
+                >
+                  <div
+                    class="size-color-left"
+                    style="margin-right: 10px; margin-top: 10px"
+                  >
+                    #2
+                  </div>
+                  <select class="size-color-center" style="margin-right: 10px">
+                    <option value="" disabled>Size</option>
+                    <option value="">S</option>
+                    <option value="">M</option>
+                    <option value="">L</option>
+                  </select>
+                  <select class="size-color-right">
+                    <option value="" disabled>Colour</option>
+                    <option value="">Red</option>
+                    <option value="">Green</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- down-container -->
+        <div class="down-container">
+          <h2 class="delivery">Free Delivery</h2>
+          <p class="total">Total :$18.00USD</p>
+        </div>
+
+        <!-- add-to-cart-section -->
+        <div class="add-to-cart-span">
+          <button class="add-to-cart">
+            <span>+</span>
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="powered">@ Powered by Pumper</div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="./script.js"></script>
