@@ -45,7 +45,7 @@
   width: 100%;
   gap: 0px;
   opacity: 0px;
-  margin-bottom: 10px;
+  margin-bottom:15px;
 }
 
 /* both dashesh of head line  */
@@ -80,8 +80,7 @@ h1 {
   font-family: Inter;
   font-size: 20px;
   font-weight: 600;
-  /* line-height: 24.2px; */
-  /* text-align: left; */
+
 }
 
 /* unit container  */
