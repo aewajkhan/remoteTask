@@ -6,29 +6,43 @@
 }
 
 #main-container {
-  height: calc(100vh);
+  height: 100vh;
   width: 100%;
+  max-width: 100%;
   display: flex;
+  /* background: #000; */
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
+
 #cart-container {
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: #000; */
+  padding: 10px;
+  /* background:red; */
   justify-content: center;
   gap: 0px;
   opacity: 0px;
   margin-left: 0px;
 }
 
+
+#mid-container{
+  /* background: #000; */
+  width: 100%;
+  max-width: 541px;
+}
 /* .headline */
 .headline {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   gap: 0px;
   opacity: 0px;
   margin-bottom: 10px;
@@ -37,7 +51,9 @@
 /* both dashesh of head line  */
 .dash-headline {
   border: 1.5px solid #c8c8c8;
-  width: 91.65px;
+  padding-right: 10px;
+  width: 100%;
+  max-width: 186.63px;
   margin-right: 10px;
   height: 0px;
   background-color: #c8c8c8;
@@ -45,7 +61,9 @@
 
 .dash-headline-right {
   border: 1.5px solid #c8c8c8;
-  width: 96.63px;
+  padding-left: 10px;
+  width: 100%;
+  max-width: 186.63px;
   margin-left: 10px;
   height: 0px;
   background-color: #c8c8c8;
@@ -54,25 +72,26 @@
 /* text in the head line  */
 
 h1 {
-  height: 24px;
-  padding: 1px;
-  gap: 0px;
-  opacity: 0px;
+  width: 100%;
+  max-width: 150px;
   height: 24px;
   text-align: center;
   color: #ff6b82;
   font-family: Inter;
   font-size: 20px;
   font-weight: 600;
-  line-height: 24.2px;
-  text-align: left;
+  /* line-height: 24.2px; */
+  /* text-align: left; */
 }
 
 /* unit container  */
 
 /* unit css will be start from here  */
 .unit-left {
+  width: 100%;
+  max-width: 541px;
   position: relative;
+
 }
 
 .unit-left input {
@@ -87,7 +106,6 @@ h1 {
   height: 15px;
   font: inter;
   font-weight: 400;
-  size: 12px;
   line-height: 14.52px;
 }
 
@@ -97,7 +115,7 @@ h1 {
 
 .all-unit {
   font-family: Inter;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 16.94px;
   text-align: left;
@@ -114,14 +132,14 @@ h1 {
   color: #ffffff;
   background-color: #ff6b82;
   font-weight: 400;
-  size: 12px;
+  font-size: 16px;
   line-height: 14.52px;
   text-align: center;
   margin-left: 10px;
   width: 55px;
   height: 17px;
-  border-radius: 1px;
-  padding: 2px 5px;
+  border-radius: 2px;
+  padding: 4px 7px;
 }
 
 /* select tag css  */
@@ -145,7 +163,7 @@ h1 {
   gap: 0px;
   opacity: 0px;
   font-family: Inter;
-  font-size: 10.85px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 13.13px;
   text-align: left;
@@ -162,7 +180,7 @@ h1 {
   gap: 0px;
   opacity: 0px;
   font-family: Inter;
-  font-size: 9.04px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 10.94px;
   text-align: left;
@@ -182,14 +200,13 @@ h1 {
 }
 
 .size-color-right option {
-  width: 28px;
-  height: 13px;
+  
   top: 271.29px;
   left: 205.67px;
   gap: 0px;
   opacity: 0px;
   font-family: Inter;
-  font-size: 10.85px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 13.13px;
   text-align: left;
@@ -197,11 +214,11 @@ h1 {
 }
 
 .size-color {
-  width: 20px;
-  height: 12px;
+  /* width: 20px;
+  height: 12px; */
   margin-bottom: 5px;
   font-family: Inter;
-  font-size: 9.94px;
+  font-size:14px;
   font-weight: 400;
   line-height: 12.03px;
   text-align: left;
@@ -214,12 +231,11 @@ h1 {
 
 /* popular section  */
 .most-popular {
-  width: 119px;
+  max-width: 149px;
   height: 26px;
   position: absolute;
-  margin-top: 10px;
-  /* right: 605px; */
-  margin-left: 218px;
+  top:0;
+  right:0;
   gap: 0px;
   border-radius: 0px 0px 4px 4px;
   background: #ff6b82;
@@ -230,12 +246,12 @@ h1 {
 }
 
 .most-popular p {
-  width: 97px;
+  width: 197px;
   height: 15px;
   gap: 0px;
   opacity: 0px;
   font-family: Inter;
-  font-size: 12px;
+  /* font-size: 1px; */
   font-weight: 700;
   line-height: 14.52px;
   text-align: center;
@@ -245,27 +261,22 @@ h1 {
 /* usd css  */
 h4 {
   width: 84px;
-  gap: 0px;
-  opacity: 0px;
+
   font-family: Inter;
-  font-size: 14.46px;
-  font-weight: 500;
+  
   line-height: 17.5px;
   text-align: left;
   color: #000000;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 16.94px;
   text-align: left;
-  height: 17px;
 
-  /* width: 40px; */
 }
 
 /* dicsount of the price css */
 .del {
   font-family: Inter;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 12.1px;
   /* color: #000000; */
@@ -280,25 +291,26 @@ h4 {
   display: none;
   margin-left: 40px;
 }
+
 .unit-1 {
-  cursor: pointer;
-  transition: height 0.3s ease;
+  width: 100%;
+  position: relative;
+  max-width: 541px;
   height: auto;
   overflow: hidden;
-  width: 341px;
   background: #ffffff;
   border: 0.9px solid #c8c8c8;
   margin-top: 16px;
-  gap: 0px;
-  opacity: 0px;
 }
+
 .expanded {
   height: 174.11px;
 }
 
-input{
+input {
   margin-bottom: 3px;
 }
+
 /* radio button css  */
 input[type="radio"] {
   background-color: #ff6b82;
@@ -317,15 +329,16 @@ input[type="radio"]:checked {
 /* end radio button css  */
 
 #unit2 {
-  width: 341px;
+  width: 100%;
+  max-width: 541px;
   gap: 0px;
   opacity: 0px;
   border: 2px solid #ff6b82;
 }
 
 #unit3 {
-  width: 341px;
-
+  width: 100%;
+  max-width: 541px;
   gap: 0px;
   opacity: 0px;
 }
@@ -335,20 +348,15 @@ input[type="radio"]:checked {
 .down-container {
   display: flex;
   justify-content: space-between;
-  width: 350px;
+  width: 100%;
+  max-width: 550px;
   margin-top: 20px;
-  
+
 }
 
 .delivery {
-  width: 89px;
-  height: 17px;
-  top: 460px;
-  left: 58px;
-  gap: 0px;
-  opacity: 0px;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 16.94px;
   text-align: left;
@@ -356,21 +364,18 @@ input[type="radio"]:checked {
 }
 
 .total {
-  width: 124px;
-  height: 17px;
-  top: 460px;
-  left: 274px;
-  gap: 0px;
-  opacity: 0px;
+
   font-family: Inter;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   line-height: 16.94px;
-  color: #000000;
+  color: #282020;
 }
 
 
 .add-to-cart-span {
+  width: 100%;
+  max-width: 541px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -379,12 +384,13 @@ input[type="radio"]:checked {
 }
 
 .add-to-cart {
-  width: 342px;
+  width: 100%;
   height: 40px;
+  background-color: #ff6b82;
+
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  background-color: #ff6b82;
   border: transparent;
   color: #ffffff;
   gap: 10px;
@@ -398,14 +404,14 @@ input[type="radio"]:checked {
 
 
 
+
 .powered {
   width: 100%;
-
   text-align: right;
   font-size: 16px;
   font-weight: 400;
   font-style: italic;
-  padding-right: 10px;
+  padding-right: 20px;
   color: #aaa;
   margin-top: 8px;
 }
@@ -415,3 +421,4 @@ input[type="radio"]:checked {
   border: 2px solid #86db82;
   background-color: #f9f9f9;
 }
+
