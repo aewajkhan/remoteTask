@@ -239,6 +239,7 @@ h1 {
   position: absolute;
   top:0;
   right:0;
+  font-family:sans-serif;
   border-radius: 0px 0px 4px 4px;
   background: #ff6b82;
   display: flex;
